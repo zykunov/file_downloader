@@ -36,7 +36,7 @@
 			if (($type != "application/pdf") && ($type != "application/x-pdf"));// exit("Не тот формат");
 			//if ($size > 31457280);// exit("Файл слишком большой"); //ограничение на 30 мб
 			
-			//Проверки, существуют ли директории и если нет, то создаются. Возможно для Линукса права доступа надо поправить.(757) если не сработает, то (777)
+			//Проверки, существуют ли директории и если нет, то создаются.
 			if(!file_exists ("$doc_root/files/$year")) mkdir("$doc_root/files/$year" , 0777); // год
 			if(!file_exists ("$doc_root/files/$year/$month")) mkdir("$doc_root/files/$year/$month" , 0777); //месяц
 			if(!file_exists ("$doc_root/files/$year/$month/$day")) mkdir("$doc_root/files/$year/$month/$day" , 0777); //число месяца
